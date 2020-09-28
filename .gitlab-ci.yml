@@ -2,7 +2,7 @@
 include: https://raw.githubusercontent.com/hassio-addons/organization/master/gitlabci/addon.yml
 
 variables:
-  ADDON_GITHUB_REPO: "hassio-addons/addon-example"
+  ADDON_GITHUB_REPO: "knightdave/addon-example"
   ADDON_SLUG: "example"
   ADDON_TARGET: "example"
 
@@ -11,3 +11,9 @@ variables:
   ADDON_ARMHF_BASE: "hassioaddons/base-armhf:8.0.3"
   ADDON_ARMV7_BASE: "hassioaddons/base-armv7:8.0.3"
   ADDON_I386_BASE: "hassioaddons/base-i386:8.0.3"
+
+  ADDON_PUBLISH: "false"
+  ADDONS_REPO_STABLE: "knightdave/repository"
+  ADDONS_REPO_BETA: "knightdave/repository-beta"
+  ADDONS_REPO_EDGE: "knightdave/repository-edge"
+  DOCKER_HUB_ORG: knightdave
